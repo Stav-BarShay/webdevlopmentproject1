@@ -1,0 +1,1229 @@
+
+@font-face{
+    font-family:Alef;
+    src:url('../fonts/Alef-regular.eot');
+    src:url('../fonts/Alef-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Alef-regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:Ellinia CLM BoldItalic;
+    src:url('../fonts/ElliniaCLM-BoldItalic.eot');
+    src:url('../fonts/ElliniaCLM-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/ElliniaCLM-BoldItalic.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:Ellinia CLM LightItalic;
+    src:url('../fonts/ElliniaCLM-LightItalic.eot');
+    src:url('../fonts/ElliniaCLM-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/ElliniaCLM-LightItalic.ttf') format('truetype');
+}
+body {
+    direction: rtl;
+}
+
+a:hover, a:focus {
+    color: black;
+    text-decoration: underline;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+#up {
+    display: inline-block;
+    vertical-align: middle;
+    position: fixed;
+    right: 70px;
+    top: -64px;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+#up.scrolled {
+    opacity: 0.8;
+    top: 480px;
+}
+
+ .glyphicon-chevron-up{
+  font-size: 30pt;
+     opacity: 0.8;
+}
+
+/*headr + footer - רקע*/
+.topheader, .FooterGeneral {
+    background-image: url("../img/header&footer-background.png");
+    background-size: cover;
+    opacity: 1.4;
+    z-index: -1;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: 0 -118px;
+}
+
+/*לוגו בחלק העליון - לינק לעמוד הבית*/
+.logo {
+    display: inline-block;
+    float: right;
+    width: 230px;
+    height: 80px;
+    padding: 0;
+}
+
+.logo > img {
+   margin-right: 5px;
+    margin-top: 5px;
+    width: 210px;
+    height: 85px;
+    padding: 0;
+
+}
+
+/*------תג ליין מתחת ללוגו------*/
+.TagLine {
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 16pt;
+    color: #469C96;
+    float: right;
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 15px;
+    z-index: 1;
+}
+
+/*--------תפריט ניווט ראשי-------*/
+.MainNav ul li {
+    display: inline-block;
+    float: right;
+    width: 179px;
+    height: 75px;
+    padding-top: 40px;
+    margin-top: 20px;
+    margin-right: 120px;
+    margin-bottom: 0px;
+    text-align: center;
+    border-bottom: 4px solid #F4DF91;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    z-index: 2;
+    position: relative;
+    display: block;
+}
+
+.MainNav ul li a {
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 18pt;
+    color: black;
+    z-index: 2;
+}
+
+.MainNav ul li ul {
+    display: none;
+}
+
+/* מעבר עכבר על: פעילות ביתית, פעילות חוץ*/
+.selected:hover, .selected:focus, #select {
+    background: url("../img/img-website.png") no-repeat top;
+    background-size: 270px;
+    background-position: -80px 0px;
+    z-index: 2;
+}
+
+/*מעבר עכבר על תפריט ראשי - פותח תת תפריט נייוט*/
+.MainNav ul li:hover ul, .MainNav ul li:focus ul {
+display: block;
+}
+
+.MainNav ul li ul li{
+    display:block;
+    margin-right: 0px;
+    padding-top:10px;
+    margin-top: -0.5px;
+    border:none;
+    height: 50px;
+    z-index: 2;
+}
+
+.MainNav ul li:hover ul li a, .MainNav ul li:focus ul li a{
+     display: block;
+ }
+
+.MainNav ul li ul li a{
+    font-size: 14pt;
+     display: block;
+     text-align: center;
+     padding-top: 10px;
+     background-color: #F7E493;
+     border-radius: 15px;
+     border: 4px solid white;
+     width: 180px;
+     height: 50px;
+     z-index: 2;
+}
+
+
+.MainNav ul li ul li a:hover, .MainNav ul li ul li a:focus {
+    background: url("../img/img-website.png") no-repeat right bottom;
+    background-size: 420px 305px;
+    background-position: -240px -184px;
+    border-radius: 1px;
+    border: none;
+    z-index: 2;
+}
+
+/*כותרת ראשית ירוקה מלאה*/
+.MainGreenHeadline {
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 20pt;
+    width: 500px;
+    padding: 16px;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+    background-color: #9FCD6A;
+}
+
+/*כותרת משנית*/
+.SecoundGreenHeadline {
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 18pt;
+    width: 500px;
+    padding: 17px;
+    border: #9FCD6A 5px solid;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+    margin-top: 20px;
+}
+
+/*עיצוב דף הבית*/
+
+/*כותרת ראשונה - לוגו*/
+#HomepageH1 {
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 28pt;
+    color: rgb(231, 53, 125);
+    padding-top: 55px;
+    padding-right: 10px;
+    margin-right: 22px;
+    width: 210px;
+    background: url("../img/img-website.png") no-repeat top;
+    background-size: 370px;
+    background-position: -110px 5px;
+    float: right;
+}
+
+#logoHomePage {
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 28pt;
+    color: rgb(95, 167, 161);
+}
+
+/*קרוסלה בדף הבית*/
+.carousel{
+    margin-top: -5px;
+}
+.rtl .carousel-control.right, .rtl .carousel-control.left {
+    background-image: none;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    font-size: 35pt;}
+
+.carousel-control .glyphicon-chevron-left:hover , .carousel-control .glyphicon-chevron-left:focus , {
+    font-size: 40pt;
+}
+
+.carousel-control .glyphicon-chevron-right:hover , .carousel-control .glyphicon-chevron-right:focus{
+     font-size: 40pt;
+}
+
+.carousel-caption {
+    margin-bottom: 200px;
+    margin-right: -50px;
+}
+
+.carousel-caption p {
+     font-size: 14pt;
+     font-family: Alef;
+     margin-left: 320px;
+     text-align: right;
+     color: black;
+     text-shadow: none;
+}
+
+.carousel-caption a {
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 14pt;
+    color: black;
+    text-shadow: none;
+    margin-top: 10px;
+    margin-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 146px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    background: url("../img/img-website.png") no-repeat right;
+    background-size: 420px;
+    background-position: -258px -220px;
+}
+
+.carousel-caption a:hover, .carousel-caption a:focus {
+    background-position: -231px -125px;
+    background-size: 375px;
+}
+
+.imgCarousel {
+    opacity: 0.38;
+}
+
+.black {
+    color: black;
+}
+
+/*תפריט ניווט אמצעי בדף הבית*/
+.MidNavBlock {
+    margin-top: 70px;
+}
+
+.MidNavBlock p {
+    font-family: Alef;
+    font-size: 14pt;
+    margin-top: 30px;
+}
+
+#SiteName {
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 14pt;
+}
+
+#MidNavHomepage li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 20px;
+    width: 200px;
+    margin-right: 0px;
+    text-align: center;
+}
+
+.MidNavIcons:hover, .MidNavIcons:focus, .MidNavHomeActivity:hover, .MidNavHomeActivity:focus {
+    animation: loading 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes loading{
+    0%{
+        transform: scale(1);}
+    50%{
+        transform: scale(1.2) rotate(0.02deg);}
+    100%{
+        transform: scale(1);}
+}
+
+.MidNavIcons {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Ellinia CLM BoldItalic';
+    width: 200px;
+    height: 100px;
+    background-image: url(../img/img-website.png);
+    background-repeat: no-repeat;
+    background-size: 550px;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+
+#GardeningIcon {
+    width: 180px;
+    background-position: bottom;
+    background-position: -115px -530px;
+}
+
+#CookingIcon {
+    background-position: -115px -400px;
+}
+
+#CreationIcon {
+    width: 160px;
+    background-position: bottom;
+    background-position: -280px -530px;
+}
+
+#OutDoorIcon {
+    background-position: bottom;
+    background-position: -410px -530px;
+}
+
+/*פעילויות מומלצות בדף הבית*/
+.RecommendedSection row .col-xs-6, .RecommendedSection row .col-xs-2, .RecommendedSection row .col-xs-4 {
+    height: 50px;
+}
+
+#RecomendedBlock {
+    margin-top: 70px;
+}
+
+.RecommendedSection {
+    margin-top: 30px;
+}
+
+.RecommendedSection h3, .RecommendedSection .col-xs-6 > p, .RecommendedSection h3 {
+     font-family: Alef;
+     font-size: 14pt;
+}
+
+.RecommendedSection .col-xs-6 > p span {
+    font-family: Alef;
+    font-weight: bold;
+}
+
+.RecommendedSection .ActivitiesCategories {
+     margin-top: 20px;
+}
+
+.RecommendedSection h3 {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.RecommendedSection .AreaCenter, .RecommendedSection .AllAges, .RecommendedSection .HomeActivity, .RecommendedSection .CreativeActivity {
+      display: inline-block;
+      margin-right: 5px;
+      font-family: Alef;
+      font-size: 11pt;
+      padding-top: 50px;
+      width: 100px;
+      text-align: center;
+      background: url("../img/img-website.png") no-repeat left;
+      background-size: 300px;
+}
+
+.RecommendedSection .ActivitiesCategories p:first-child {
+    margin-right: 0;
+}
+
+.RecommendedSection .AreaCenter {
+    background-position: -75px -125px;
+}
+
+.RecommendedSection .AllAges {
+        background-position: 20px -235px;
+        background-size: 320px;
+    }
+
+.RecommendedSection .HomeActivity {
+        background-position: 20px -132px;
+    }
+
+.RecommendedSection .CreativeActivity {
+        background-position: 20px -60px;
+    }
+
+.ActivityButton {
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 14pt;
+    color: black;
+    margin-top: 150px;
+    margin-right: -20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    width: 146px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+    background: url("../img/img-website.png") no-repeat right;
+    z-index: -1;
+    background-size: 420px;
+    background-position: -258px -220px;
+}
+
+.ActivityButton:hover, .ActivityButton:focus {
+        background-position: -231px -125px;
+        background-size: 375px;
+    }
+
+.RecommendedImg {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    opacity: 0.7;
+}
+
+
+/*עיצוב דף יצירה*/
+
+/*כפתור כניסה לפופ אפ בדף יצירה*/
+.card-header {
+    width: 400px;
+    margin-top: 40px;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    padding-right: 70px;
+    border: 5px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.card-header > h2 > a {
+        font-family: 'Ellinia CLM BoldItalic';
+        font-size: 16pt;
+        color: black;
+    }
+
+#headingOne {
+    border-color: #EE3283;
+}
+
+#headingTwo {
+    border-color: #479D97;
+}
+
+/*חץ סגור */
+a:hover .headingOneArrowClose,a:focus .headingOneArrowClose,.headingTwoArrowClose , .headingThreeArrowClose , .headingfourArrowClose {
+    margin-top: -5px;
+    margin-right: -50px;
+    padding-left: -20px;
+    margin-top: -3px;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-right: 25px solid black;
+    border-bottom: 15px solid transparent;
+}
+
+/* חץ פתוח */
+.headingOneArrowClose{
+    margin-top: 0px;
+    margin-right: -50px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid black;
+}
+
+a:hover .headingTwoArrowOpen , a:focus .headingTwoArrowOpen , a:hover  .headingThreeoArrowOpen , a:foucs  .headingThreeoArrowOpen , a:hover .headingfourArrowOpen , a:focus .headingfourArrowOpen{
+    margin-top: 0px;
+    margin-right: -50px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid black;
+}
+a:hover .headingTwoArrowOpen , a:focus .headingTwoArrowOpen , a:hover .headingThreeArrowOpen , a:focus .headingThreeArrowOpen , a:hover .headingfourArrowOpen , a:focus .headingfourArrowOpen{
+      margin-top: 0px;
+    margin-right: -50px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid black;  
+}
+a:hover .headingfourArrowOpen , a:focus .headingfourArrowOpen{
+      margin-top: 0px;
+    margin-right: -50px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 25px solid black;  
+}
+
+#headingThree {
+    border-color: #F8E494;
+}
+
+#headingfour {
+    border-color: #9ECB69;
+}
+
+.SmallCard {
+    margin-top: 20px;
+    height: 250px;
+    background: url("../img/BorderSmallCard.png") no-repeat center;
+    background-position: 8px 5px;
+    background-size: 930px 240px;
+    padding-right: 35px;
+    padding-top: 30px;
+}
+
+.SmallCard section {
+        width: 920px;
+        height: 230px;
+        padding-top: 10px;
+        padding-right: 20px;
+        margin-top: -20px;
+        margin-right: -30px;
+    }
+
+.SmallCard h3 {
+        font-family: 'Ellinia CLM BoldItalic';
+        font-size: 14pt;
+        width: 300px;
+    }
+
+.SmallCard .Description {
+        font-family: Alef;
+        line-height: 25px;
+        font-size: 14pt;
+        width: 500px;
+        margin-top: 20px;
+    }
+
+#collapseOne .SmallCard:first-child section img {
+        float: left;
+        display: inline;
+        margin-top: -200px;
+        margin-left: 20px;
+        width: 320px;
+        border-radius: 30px;
+        opacity: 0.8;
+    }
+.SmallCard section img {
+        float: left;
+        display: inline;
+        margin-top: -205px;
+        margin-left: 20px;
+        width: 320px;
+        border-radius: 30px;
+        opacity: 0.8;
+    }
+
+.SmallCard .ModalOpenButton {
+        font-family: 'Ellinia CLM BoldItalic';
+        font-size: 14pt;
+        color: black;
+        margin-top: -60px;
+        margin-right: 390px;
+        margin-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        width: 146px;
+        height: 35px;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        display: inline-block;
+        background: url("../img/img-website.png") no-repeat right;
+        z-index: -1;
+        background-size: 420px;
+        background-position: -258px -220px;
+    }
+
+.SmallCard .ModalOpenButton:hover, .SmallCard .ModalOpenButton:focus {
+            background-position: -231px -125px;
+            background-size: 375px;
+            color: black;
+        }
+
+.SmallCard p.Money, .SmallCard p.EDJ {
+        font-family: Alef;
+        font-weight: bold;
+        text-align: center;
+        width: 100px;
+        margin-top: 50px;
+        padding-top: 50px;
+        background: url("../img/img-website.png") no-repeat left;
+        background-size: 480px;
+    }
+
+.SmallCard p.Money {
+        background-position: 6px 0px;
+    }
+
+.SmallCard p.EDJ {
+        margin-top: -66px;
+        margin-right: 110px;
+        background-position: 15px -456px;
+    }
+
+/*כרטיסיית פופ אפ*/
+
+.modal-open .modal{
+    overflow: visible;
+}
+#leafPainting .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 853px;
+    border-radius: 25px;
+}
+
+#Microphone .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 885px;
+    border-radius: 25px;
+}
+
+#MrGamish .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 1053px;
+    border-radius: 25px;
+}
+
+#ColoredSalt .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 980px;
+    border-radius: 25px;
+}
+
+#DreamCatcher .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 1260px;
+    border-radius: 25px;
+}
+
+#GreetingCards .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 1040px;
+    border-radius: 25px;
+}
+
+#Necklace1 .modal-content, #Necklace2 .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 1065px;
+    border-radius: 25px;
+}
+
+#Origami .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 990px;
+    border-radius: 25px;
+}
+
+#TreasureHunt .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 1080px;
+    border-radius: 25px;
+}
+
+#PuppetShow1 .modal-content, #PuppetShow2 .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 895px 1190px;
+    border-radius: 25px;
+}
+
+#MemoryGame .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 950px;
+    border-radius: 25px;
+}
+
+#PictureFrame .modal-content {
+    background: url("../img/BorderBigCard.png") no-repeat center;
+    background-size: 898px 1130px;
+    border-radius: 25px;
+}
+
+.PopupH3 {
+    width: 300px;
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 16pt;
+    margin-top: 30px;
+}
+
+.modal p.ActivitiesCategories {
+    font-family: Alef;
+    font-size: 10pt;
+    text-align: center;
+    display: inline-block;
+    padding-top: 50px;
+    margin-top: 20px;
+    width: 80px;
+    background: url("../img/img-website.png") no-repeat left;
+    background-size: 250px;
+}
+
+.modal p.HomeActivity {
+    background-position: 15px -105px;
+}
+
+.modal p.CreativeActivity {
+    background-position: 19px -45px;
+}
+
+.modal p.AllAges {
+    background-size: 330px;
+    background-position: 12px -242px;
+}
+
+.PopupH4 {
+    width: 400px;
+    font-family: 'Ellinia CLM BoldItalic';
+    font-size: 14pt;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+#collapseOne .PopupH4 {
+    color: #E7357D;
+}
+
+#collapseOne .close {
+    font-size: 80px;
+    margin-top: -20px;
+    margin-left: 40px;
+    color: #E7377F;
+    opacity: .8;
+}
+
+#collapseOne .close:hover, #collapseOne .close:focus {
+        color: #E7377F;
+        opacity: .5;
+    }
+
+#collapseOne .modal-content .PrintIcon {
+    color: #E7377F;
+}
+
+#collapseTwo .PopupH4 {
+    color: #5A958E;
+}
+
+#collapseTwo .close {
+    font-size: 80px;
+    margin-top: -20px;
+    margin-left: 40px;
+    color: #5A958E;
+    opacity: .8;
+}
+
+#collapseTwo .close:hover, #collapseTwo .close:focus {
+        color: #5A958E;
+        opacity: .5;
+    }
+
+#collapseTwo .modal-content .PrintIcon {
+    color: #5A958E;
+}
+
+#collapseThree .PopupH4, #Necklace1 .PopupH4 {
+    color: #9C813C;
+}
+
+#collapseThree .close, #Necklace1 .close {
+    font-size: 80px;
+    margin-top: -20px;
+    margin-left: 40px;
+    color: #9C813C;
+    opacity: .8;
+}
+
+#collapseThree .close:hover, #collapseThree .close:focus, #Necklace1 .close:hover, #Necklace1 .close:focus {
+        color: #9C813C;
+        opacity: .5;
+    }
+
+#collapseThree .modal-content .PrintIcon, #collapseThree .modal-content .DownLoadTreasureHunt, #Necklace1 .modal-content .PrintIcon {
+    color: #9C813C;
+}
+
+#collapseThree .modal-content .DownLoadTreasureHunt {
+    display: inline;
+    font-family: Alef;
+    font-size: 14pt;
+    text-align: center;
+    padding-top: 75px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 80px;
+    height: 90px;
+    background: url(../img/pdf.png) no-repeat center;
+    background-size: 50px;
+}
+
+#collapsefour .PopupH4, #PuppetShow1 .PopupH4 {
+    color: #738B49;
+}
+
+#collapsefour .close, #PuppetShow1 .close {
+    font-size: 80px;
+    margin-top: -20px;
+    margin-left: 40px;
+    color: #738B49;
+    opacity: .8;
+}
+
+#collapsefour .close:hover, #collapsefour .close:focus, #PuppetShow1 .close:hover, #PuppetShow1 .close:focus {
+        color: #738B49;
+        opacity: .5;
+    }
+
+#collapsefour .modal-content .PrintIcon, #PuppetShow1 .modal-content .PrintIcon {
+    color: #738B49;
+}
+
+.modal-content {
+    padding-right: 20px;
+}
+
+.modal-content li {
+        width: 486px;
+        font-family: Alef;
+        font-size: 12pt;
+        line-height: 30px;
+        margin-right: 30px;
+        list-style-type: disc;
+    }
+
+.modal-content section > p {
+        font-family: Alef;
+        font-size: 12pt;
+        width: 486px;
+        line-height: 25px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+.modal-content img {
+        margin-top: -160px;
+        height: auto;
+        border-radius: 30px;
+        opacity: 0.8;
+    }
+
+.modal-content iframe {
+        margin-top: -100px;
+        border-radius: 30px;
+    }
+
+#collapseThree .modal-content iframe, #Necklace1 .modal-content iframe {
+    margin-top: -230px;
+    width: 320px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+#collapsefour .modal-content iframe, #PuppetShow1 .modal-content iframe {
+    margin-top: -230px;
+    width: 320px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.modal-content .PrintIcon {
+    display: inline-block;
+    position: relative;
+    font-family: Alef;
+    font-size: 14pt;
+    text-align: center;
+    padding-top: 75px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 90px;
+    background: url(../img/printer.png) no-repeat center;
+    background-size: 50px;
+}
+
+.modal-content .PrintIcon:hover ,.modal-content .PrintIcon:focus , .DownLoadTreasureHunt:hover , .DownLoadTreasureHunt:focus {
+    font-weight: bold;
+}
+
+
+  @media screen {
+    #leafPainting , #Microphone , #MrGamish ,  #ColoredSalt ,#DreamCatcher , #GreetingCards , #Necklace1 , #Necklace2 , #Origami , #TreasureHunt , #PuppetShow1 , #PuppetShow2 , #MemoryGame , #PictureFrame {
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    }
+}
+
+@media screen {
+  #leafPainting , #Microphone , #MrGamish ,  #ColoredSalt ,#DreamCatcher , #GreetingCards , #Necklace1 , #Necklace2 , #Origami , #TreasureHunt , #PuppetShow1 , #PuppetShow2 , #MemoryGame , #PictureFrame {
+      display: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility:hidden;
+  }
+  #leafPainting, #leafPainting * , #Microphone , #Microphone * , #MrGamish , #MrGamish * , #ColoredSalt , #ColoredSalt * , #DreamCatcher , #DreamCatcher * , #GreetingCards , #GreetingCards * , #Necklace1 , #Necklace1 * , #Necklace2 , #Necklace2 * , #Origami , #Origami * , #TreasureHunt , #TreasureHunt * , #PuppetShow1 , #PuppetShow1 * , #PuppetShow2 , #PuppetShow2 * , #MemoryGame , #MemoryGame * , #PictureFrame , #PictureFrame * {
+    visibility:visible;
+  }
+  #leafPainting , #Microphone , #MrGamish ,  #ColoredSalt ,#DreamCatcher , #GreetingCards , #Necklace1 , #Necklace2 , #Origami , #TreasureHunt , #PuppetShow1 , #PuppetShow2 , #MemoryGame , #PictureFrame {
+    position:absolute;
+    left:0;
+    top:0;
+  }
+}
+
+/*דף צור קשר*/
+#ContectUs {
+    background: url("../img/Depositphotos_43657413_m-2015-small.jpg") no-repeat left;
+    background-size: 350px;
+    background-position: 50px 110px;
+}
+
+#ContectUs > .opacity {
+        margin-top: 100px;
+        margin-right: 540px;
+        height: 480px;
+        width: 400px;
+        position: absolute;
+        background-color: white;
+        opacity: 0.5;
+    }
+
+/*טופס*/
+
+form {
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #AAA;
+    width: 450px;
+    background-image: url(../img/header&footer-background.png);
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    overflow: auto;
+}
+
+form label {
+        font-family: Alef;
+        font-size: 12pt;
+    }
+
+form input[type=text], form textarea {
+        width: 400px;
+        padding: 12px 20px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        box-shadow: 0 0 3px #AAA;
+        border-radius: 5px;
+    }
+
+input[type=text]:focus, form textarea:focus {
+            border: 3px solid rgba(95,167,161,0.8);
+            box-shadow: 0 0 5px #AAA;
+            outline: none;
+        }
+
+form input[type=submit] {
+        border-radius: 20px;
+        border: none;
+        background-color: #9FCD6A;
+        padding: 7px 20px;
+        margin: 5px 10px 0 30px;
+        float: left;
+        font-family: Alef;
+        font-weight: bold;
+    }
+
+form input[type=submit]:hover, form input[type=submit]:focus {
+            background: #789A50;
+            color: white;
+            border: none;
+        }
+
+/*דף אודות*/
+#odot section {
+    margin-top: 40px;
+}
+
+#odot section ul {
+        margin-top: 20px;
+    }
+
+#TLM {
+    display: block;
+    font-size: 16pt;
+    font-family: Alef;
+    color: black;
+    width: 300px;
+    margin-right: 340px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#HITLogo {
+    width: 150px;
+    margin-top: 10px;
+    margin-right: 417px;
+}
+
+footer #Rights {
+    display: block;
+    padding-top: 100px;
+    background: url(../img/pdf.png) no-repeat right;
+    background-size: 50px;
+    background-position: 838px 45px;
+    font-size: 14pt;
+    font-family: Alef;
+    color: black;
+    margin-right: 9px;
+    margin-top: -10px;
+}
+
+#odot strong {
+    font-family: Alef;
+}
+
+/*דף מפת אתר*/
+#SiteMapPage ul li a {
+    color: black;
+}
+
+#SiteMapPage ul:first-child {
+    margin-top: 20px;
+}
+
+#SiteMapPage {
+    background: url("../img/Depositphotos_70877313_m-2015-small.jpg") no-repeat left;
+    background-size:350px; 
+    background-position: 50px 70px;
+}
+
+#SiteMapPage > .opacity {
+        margin-top: 90px;
+        margin-right: 550px;
+        height: 330px;
+        width: 325px;
+        position: absolute;
+        background-color: white;
+        opacity: 0.5;
+    }
+
+/*דף פעילות ביתית*/
+.HomeSection ul {
+    margin-top: -10px;
+}
+
+#HomeActivity section:last-child {
+    margin-top: 40px;
+}
+
+#MidNav li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 20px;
+    margin-right: 80px;
+    width: 200px;
+}
+
+#MidNav ul li:first-child a {
+    background: url("../img/img-website.png") no-repeat bottom;
+    background-position: -180px -500px;
+    background-size: 700px;
+}
+
+#MidNav ul li:nth-child(2) a {
+    background: url("../img/img-website.png") no-repeat bottom;
+    background-position: -355px -664px;
+    background-size: 700px;
+}
+
+#MidNav ul li:last-child a {
+    background: url("../img/img-website.png") no-repeat bottom;
+    background-position: -173px -664px;
+    background-size: 700px;
+}
+
+#MidNav ul li a {
+    font-family: 'Ellinia CLM BoldItalic';
+    text-decoration: none;
+    padding-top: 150px;
+    color: black;
+    font-size: 20pt;
+    display: block;
+}
+
+#MidNav ul li a:hover, #MidNav ul li a:focus {
+        text-decoration: underline;
+    }
+
+#MidNav ul li {
+    width: 200px;
+    text-align: center;
+}
+
+/*פסקת טקסט העמוד*/
+#odot, #HomeActivity, #ContectUs, #SiteMapPage, #CreativePage {
+    margin-top: 100px;
+}
+
+/*טקסט פסקה - צרו קשר, אודות*/
+#ContectUs > p, #odot p, #odot ul li, #odot section a, #SiteMapPage ul li, .HomeSection p, .HomeSection ul li {
+        font-family: Alef;
+        color: black;
+        font-size: 14pt;
+        margin-right: 9px;
+        margin-top: 20px;
+        line-height: 26px;
+        width: 850px;
+    }
+
+/*מעבר עכבר על קישורים*/
+#odot a:hover, #odot a:focus, #SiteMapPage ul li a:hover, #SiteMapPage ul li a:focus {
+            font-weight: bold;
+        }
+
+/*בולטים ברשימה*/
+#odot ul li, #SiteMapPage ul, .HomeSection ul {
+        margin-top: 10px;
+        margin-right: 30px;
+        list-style-image: url("../img/BultList.png");
+        width: 830px;
+    }
+
+/*קישורים לא פעילים*/
+.disable-link {
+    cursor: not-allowed;
+}
+
+.disable-link:hover , .disable-link:focus, #MidNav .disable-link:hover , #MidNav .disable-link:focus {
+        cursor: not-allowed;
+        text-decoration: line-through;
+    }
+
+/*footer*/
+.FooterGeneral {
+    margin-top: 40px;
+    border-top: 6px solid #F4DF91;
+}
+
+/*footer - לוגו*/
+.FooterGeneral img {
+        width: 150px;
+        padding: 15px;
+        float: right;
+    }
+
+/*footer - תפריט ניווט*/
+.FooterGeneral nav ul li {
+        display: inline-block;
+        float: left;
+        margin-top: 40px;
+        border-left: 4px solid #F4DF91;
+    }
+
+.FooterGeneral nav ul li:first-child {
+            border-style: none;
+        }
+
+.FooterGeneral nav ul li a {
+            font-family: 'Ellinia CLM LightItalic';
+            font-size: 12pt;
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+        }
+
+/*footer - מעבר על אלמנטים בתפריט ניווט*/
+.FooterGeneral nav ul li a:hover, .FooterGeneral nav ul li a:focus, .FooterGeneral nav ul li .SelectedFooter {
+                font-family: 'Ellinia CLM BoldItalic';
+                font-size: 12pt;
+                color: black;
+                text-decoration: underline;
+                padding: 15px;
+            }

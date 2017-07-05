@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="he-li">
+<head>
+    <meta charset="utf-8" />
+    <title> עמוד הבית - מדריחופש </title>
+    <meta name="description" content="מדריחופש - אתר המציג מבחר פעילויות לילדים לימי החופש הגדול, לפי תקציב, גיל, סוג הפעילות ומיקומה" />
+    <meta name="keywords" content="מדריך לחופש הגדול, מדריחופשפעילויות לילדים, פעילויות לחופש הגדול, חופש גדול, החופש הגדול" />
+    <meta name="author" content="סתיו בר שי, איתאל קלנגן, הדר בוסתנאי" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link href='http://serve.fontsproject.com/css?family=Ellinia+CLM:200,200i,700i' rel='stylesheet' type='text/css'>
+    <link href='http://serve.fontsproject.com/css?family=Alef:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="img/favicon.png">
+
+    <!-- CSS -->
+    <!--Bootstrap 3 css file-->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!--Bootstrap non-responsive css file (just add class "non-responsive" to the body tag)-->
+    <link href="bootstrap/css/bootstrap-non-responsive.css" rel="stylesheet" />
+    <!--Bootstrap fixes for hebrew (add class='rtl' to the body tag)-->
+    <link href="bootstrap/css/bootstrap-rtl.css" rel="stylesheet" />
+    <!--Bootstrap them - for changing the shape and colors of bootstrap objects like buttons-->
+    <!--<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" />-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/NavTab.js"></script>
+    <script src="jScripts/TopButton.js"></script>
+    <script src="jScripts/PrintModal.js"></script>
+    <!--Bootstrap library-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body class="rtl non-responsive" onload="tab_nav()">
+    <a href="#myCarousel" class="sr-only sr-only-focusable">דלגו לתוכן העמוד</a>
+    <div class="container">
+        <header class="topheader">
+            <h1 id="HomepageH1">מדרי<span id="logoHomePage">חופש</span></h1>
+            <p class="TagLine">מגוון ענק של פעילויות<br />לחופש גדול מלא חוויות!</p>
+            <nav class="MainNav">
+                <ul>
+                    <li class="selected">
+                        <a href="HomeActivities.html">פעילות ביתית</a>
+                        <ul>
+                            <li><a class="disable-link" href="javascript:void(0)">פעילויות בישול</a></li>
+                            <li><a href="CreativeActivities.html">פעילויות יצירה</a></li>
+                            <li><a class="disable-link" href="javascript:void(0)">פעילויות גינון</a></li>
+                        </ul>
+                    </li>
+                    <li class="selected">
+                        <a class="disable-link" href="javascript:void(0)">פעילות חוץ</a>
+                        <ul>
+                            <li><a class="disable-link" href="javascript:void(0)">פעילויות בצפון</a></li>
+                            <li><a class="disable-link" href="javascript:void(0)">פעילויות במרכז</a></li>
+                            <li><a class="disable-link" href="javascript:void(0)">פעילויות בירושלים</a></li>
+                            <li><a class="disable-link" href="javascript:void(0)">פעילויות בדרום</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!--קרוסלה-->
+        <section id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-keyboard="true">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="imgCarousel" src="img/slider-puppetshow.jpg" alt="פעילות של הכנת תאטרון בובות ביתית">
+                    <div class="carousel-caption">
+                        <p>בניית תאטרון בובות משלכם, <br />ביחד עם הילדים בקלות ובהנאה!</p>
+                        <a data-toggle="modal" aria-hidden="true" href="#PuppetShow1">לחצו לפעילות</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="imgCarousel" src="img/MakingCupcakes1.jpg" alt="פעילות של הכנת קאפקייקס">
+                    <div class="carousel-caption">
+                        <p>הכנת קאפקייקס ביחד עם הילדים, <br />חוויה כיפית וטעימה במיוחד!</p>
+                        <a data-toggle="modal" class="disable-link" href="javascript:void(0)">לחצו לפעילות</a>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left black" aria-label="arrow left"></span>
+                    <span class="sr-only">הקודם</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right black" aria-label="arrow right"></span>
+                    <span class="sr-only">הבא</span>
+                </a>
+            </div>
+            </section>
+            <!-- פופ אפ פעילות תאטרון בובות -->
+            <div class="modal fade bd-example-modal-lg" id="PuppetShow1" tabindex="-1" role="dialog" aria-labelledby="תאטרון בובות" aria-hidden="true" data-keyboard="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content printElement">
+                                        <article>
+                                                <header>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="כפתור סגירה">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h3 class="PopupH3">תאטרון בובות</h3>
+                                                    <p class="ActivitiesCategories HomeActivity">פעילות ביתית</p>
+                                                    <p class="ActivitiesCategories CreativeActivity">יצירה</p>
+                                                    <p class="ActivitiesCategories AllAges">מותאם לכולם</p>
+                                                </header>
+                                                <section>
+                                                    <h4 class="PopupH4">מצרכים להכנה</h4>
+                                                    <ul>
+                                                        <li>קופסת קרטון גדולה (עדיפות לקרטון קשיח כדוגמת אריזת שישיית משקה מוגז)</li>
+                                                        <li>צבע אקרילי</li>
+                                                        <li>טוש שחור</li>
+                                                        <li>סכין יפנית</li>
+                                                        <li>דבק פלסטי</li>
+                                                        <li>לקישוט: נייר אריזה, נייר עיתון, בדים, טושים צבעוניים</li>
+                                                    </ul>
+                                                </section>
+                                                <div class="row">
+                                                    <section class="col-xs-7">
+                                                        <h4 class="PopupH4">אופן ההכנה</h4>
+                                                        <p>פעילות מקדימה - כתיבת סיפור להצגה:</p>
+                                                        <ul>
+                                                            <li>בקשו מהילדים לכתוב סיפור במילים שלהם, שאחר כך יהפוך להצגה אותה תציגו בתאטרון הבובות.</li>
+                                                        </ul>
+                                                        <p>להכנת התאטרון:</p>
+                                                        <ol>
+                                                            <li>צבעו את הקרטון בצבע אקרילי, ולאחר מכן הניחו לקרטון להתייבש.</li>
+                                                            <li>סמנו על גבי צד אחד של הקרטון מלבן, השאירו שוליים של 10 סנטימטרים מכל צד.</li>
+                                                            <li>חתכו בעזרת סכין יפנית את המלבן בשני חלקים –ליצירת חלון עם שתי "דלתות" (אותן הילדים יוכלו לפתוח כאשר ההצגה תתחיל).</li>
+                                                            <li>תנו לילדים לקשט את הקרטון עם גזירי נייר, טושים צבעוניים, גזירי עיתון.</li>
+                                                            <li>כעת הילדים יוכלו להציג את הסיפור שהם כתבו בהצגה מקורית עם התאטרון שיצרו בעצמם!</li>
+                                                            <li>הערה: ניתן להציג עם בובות שקיימות בביתכם, או ליצור בובות בעצמכם!</li>
+                                                        </ol>
+                                                    </section>
+                                                    <img class="col-xs-4" src="img/PuppetShow.jpg" alt="בניית תאטרון בובות ביתי">
+                                                    <div class="col-xs-1"></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-7">
+                                                        <section>
+                                                            <h4 class="PopupH4">תקציב</h4>
+                                                            <p>עד 100 ש"ח לתאטרון (כולל יצירת / קניית בובות)</p>
+                                                        </section>
+                                                        <section>
+                                                            <h4 class="PopupH4">ערך מוסף</h4>
+                                                            <p>הנחו את הילדים לכתוב סיפור אישי בעל משמעות עבורם, שאותו יכתבו במילים שלהם ללא עזרה מצדכם. כך תעודדו את היצירתיות שלהם בכתיבה, והם ירגישו גאים להפיק הצגה שהם עצמם כתבו את התסריט שלה!</p>
+                                                        </section>
+                                                    </div>
+                                                    <iframe class="col-xs-4" width="400" height="250" src="https://www.youtube.com/embed/e-mfUBQE3_s?rel=0" ?rel=0 showinfo=0 modestbranding=1 frameborder=0 nologo=1 iv_load_policy=3 allowfullscreen></iframe>
+                                                    <div class="col-xs-1"></div>
+                                                </div>
+                                                <a href="javascript:window.print()" class="PrintIcon">להדפסה</a>
+                                            </article>
+                                </div>
+                            </div>
+                        </div>
+            
+            <!--ניווט אמצעי עם אייקונים-->
+            <section class="MidNavBlock">
+                <h2 class="MainGreenHeadline">מה תוכלו למצוא באתר?</h2>
+                <p>באתר <span id="SiteName">מדריחופש</span> תוכלו למצוא פעילויות לחופש הגדול לפי גילאים, מיקום, תקציב ועוד!</p>
+                <nav id="MidNavHomepage" class="row">
+                    <div class="col-xs-1"></div>
+                    <ul>
+                        <li class="col-xs-2.5"><a class="MidNavIcons disable-link" href="javascript:void(0)" id="GardeningIcon">פעילויות גינון</a></li>
+                        <li class="col-xs-2.5"><a class="MidNavIcons disable-link" href="javascript:void(0)" id="CookingIcon">פעילויות בישול</a></li>
+                        <li class="col-xs-2.5"><a href="CreativeActivities.html" class="MidNavIcons" id="CreationIcon">פעילויות יצירה</a></li>
+                        <li class="col-xs-2.5"><a class="MidNavIcons disable-link" href="javascript:void(0)" id="OutDoorIcon">פעילויות חוץ במגוון אזורים</a></li>
+                    </ul>
+                    <div class="col-xs-1"></div>
+                </nav>
+            </section>
+
+            <!--פעילויות מומלצות-->
+            <section id="RecomendedBlock">
+                <h2 class="MainGreenHeadline">פעילויות מומלצות</h2>
+                    <section class="RecommendedSection row">
+                        <div class="col-xs-6">
+                            <h3>חוויה חקלאית</h3>
+                            <p>חוויה מדהימה לכל המשפחה, חווה השוכנת בלבו של כרם פרטי מרהיב <span>במזכרת בתיה</span>.</p>
+                            <div class="ActivitiesCategories">
+                                <p class="AreaCenter">מרכז הארץ</p>
+                                <p class="AllAges">מותאם לכולם</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-2">
+                            <a class="ActivityButton disable-link" href="javascript:void(0)">לחצו לפעילות</a>
+                        </div>
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-4">
+                            <img class="RecommendedImg" src="img/FarmActivity.jpg" alt="פעילות חוץ חוויה חקלאית במזכרת בתיה" />
+                        </div>
+                    </section>
+            </section>
+            <section class="RecommendedSection row">
+                <div class="col-xs-6">
+                    <h3>שרשרת חרוזים מבצק מלח</h3>
+                    <p>פעילות <span>יצירה</span> קלילה ומהנה ליצירת מגוון שרשראות חרוזים צבעוניות בעיצוב אישי ייחודי!</p>
+                    <div class="ActivitiesCategories">
+                        <p class="HomeActivity">פעילות ביתית</p>
+                        <p class="CreativeActivity">יצירה</p>
+                        <p class="AllAges">גילאי 9-12</p>
+                        </div>
+                    </div>
+                <div class="col-xs-2">
+                    <a class="ActivityButton" data-toggle="modal" href="#Necklace1">לחצו לפעילות</a>
+                </div>
+                <div class="col-xs-4">
+                    <img class="RecommendedImg" src="img/SaltBeads.jpg" alt="פעילות ביתית ליצירת שרשרת חרוזי מלח" />
+                </div>
+            </section>
+                        <!--פופ אפ פעילות שרשרת מחרוזי מלח-->
+                <div class="modal fade bd-example-modal-lg" id="Necklace1" tabindex="-1" role="dialog" aria-labelledby="שרשרת מחרוזי מלח" aria-hidden="true" data-keyboard="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content printElement">
+                            <article>
+                                <header>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="כפתור סגירה">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <h3 class="PopupH3">שרשרת מחרוזי מלח</h3>
+                                        <p class="ActivitiesCategories HomeActivity">פעילות ביתית</p>
+                                        <p class="ActivitiesCategories CreativeActivity">יצירה</p>
+                                        <p class="ActivitiesCategories AllAges">גילאי 9-12</p>
+                                </header>
+                                <section>
+                                    <h4 class="PopupH4">מצרכים להכנה</h4>
+                                    <ul>
+                                        <li>2 כוסות קמח</li>
+                                        <li>כוס מלח</li>
+                                        <li>כוס מים (לפי הצורך)</li>
+                                        <li>צבעי מאכל לבחירתכם</li>
+                                        <li>חוט דייג / סרט סאטן דק</li>
+                                        <li>לקה</li>
+                                    </ul>
+                                </section>
+                                <section class="row">
+                                    <div class="col-xs-7">
+                                        <h4 class="PopupH4">אופן ההכנה</h4>
+                                        <ol>
+                                            <li>ערבבו את כל החומרים בקערה עד לקבלת בצק אחיד.</li>
+                                            <li>הוסיפו לבצק חצי כפית שטוחה של צבע מאכל (לחרוזים צבעוניים - חלקו את הבצק למספר חלקים והוסיפו לכל חלק צבע מאכל בצבע שונה). הטמיעו את הצבע בבצק תוך כדי לישה.</li>
+                                            <li>קרצו מהבצק חרוזים בקוטר של מטבע חצי שקל.</li>
+                                            <li>נעצו בכל חרוז קיסם על מנת ליצור חור.</li>
+                                            <li>הניחו את החרוזים להתייבש בשמש על גבי כוס או משטח ללא תחתית, כך שהם ישמרו על צורתם העגולה.</li>
+                                            <li>בכל שעתיים סובבו את הקיסם הנעוץ במרכז כל חרוז כך שהחור באמצע החרוז לא ייסגר.</li>
+                                            <li>לאחר שהחרוזים התייבשו, ניתן לקשט אותם באמצעות צבעי מים או טושים, או להשאיר אותם כמו שהם.</li>
+                                            <li>השחילו את החרוזים בחוט שבחרתם.</li>
+                                            <li>צפו את השרשרת בלקה – והשרשרת מוכנה!</li>
+                                        </ol>
+                                    </div>
+                                    <img class="col-xs-4" src="img/SaltBeads.jpg" alt="חרוזי בצק מלח צבעוניים" />
+                                    <div class="col-xs-1"></div>
+                                </section>
+                                <div class="row">
+                                    <div class="col-xs-7">
+                                        <section>
+                                            <h4 class="PopupH4">תקציב</h4>
+                                            <p>עד 50 ש"ח לשרשרת</p>
+                                        </section>
+                                    </div>
+                                    <iframe class="col-xs-4" width="400" height="250" src="https://www.youtube.com/embed/N_vn-scKhug?rel=0" ?rel=0 showinfo=0 modestbranding=1 frameborder=0 nologo=1 iv_load_policy=3 allowfullscreen></iframe>
+                                    <div class="col-xs-1"></div>
+                                </div>
+                                 <a href="javascript:window.print()" class="PrintIcon">להדפסה</a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div id="up" class="glyphicon glyphicon-chevron-up"></div>
+    <!--פוטר-->
+    <footer class="FooterGeneral">
+            <img src="img/logo.png" alt="לוגו אתר מדריחופש" />
+            <nav>
+                <ul>
+                    <li><a href="siteMap.html">מפת אתר</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                    <li><a href="contactUs.html">צרו קשר</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
